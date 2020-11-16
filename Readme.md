@@ -1,4 +1,4 @@
-This is a blank svelte-native project template. It has preprocessing with typescript support enabled. It provides an easy way to get started with a svelte native project.
+This is a eVoting Mobile App Build With SvelteNative and using API from [eVoting](https://github.com/manh21/eVoting). It has preprocessing with typescript support enabled. It provides an easy way to get started with a svelte native project.
 
 # Usage
 
