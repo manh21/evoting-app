@@ -27,10 +27,18 @@
     import { onMount } from "svelte";
     import { showModal, navigate } from 'svelte-native';
     import Auth from "./components/Auth.svelte";
+    import Vote from "./components/Vote.svelte";
 
     let message: string = 'New Svelte Native App :)';
 
     onMount(()=>{
+        const user_data = $user_profile;
+        if($user_profile){
+            if(user_data.status !== 'Sudah Memilih'){
+                navigate({ page: Vote});
+            }
+        }
+        console.log(user_data);
         console.log("User Token ", $user_token)
         console.log("User Profile ", $user_profile)
     })

@@ -34,7 +34,7 @@
     let isLoading = false;
 
     onMount(()=> {
-        // console.log($user_profile);
+        console.log($user_profile);
         if ($user_profile) {
             closeModal($user_profile);
         }

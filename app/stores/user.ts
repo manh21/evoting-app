@@ -34,7 +34,7 @@ function buildUserProfileStore() {
     }
 }
 
-export function login(username:string, password:string):Promise<User> {
+export async function login(username:string, password:string):Promise<User> {
     console.log(username);
     console.log(password);
 
